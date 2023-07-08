@@ -34,7 +34,7 @@ export default function Page() {
     const getParams = async () => {
         const keyValuePairs = path.slice(1).split('&');
         // const [key, page] = keyValuePairs.pop().split('='); 
-        // console.log(`current page: ${page}`)
+        // // console.log(`current page: ${page}`)
         // setCurrentPage(page);
         const values = {
             name: "",
@@ -47,7 +47,7 @@ export default function Page() {
             const [key, value] = pair.split('=');
             values[key] = value;
         });
-        console.log("GET PARAMS")
+        // console.log("GET PARAMS")
         return values;
     }
     
@@ -55,8 +55,8 @@ export default function Page() {
 
         const axios = require('axios');
         const a = await getParams();
-        console.log(`A: ${a}`)
-        console.log(a)
+        // console.log(`A: ${a}`)
+        // console.log(a)
         const options = {
             method: 'GET',
             url: 'https://musclewiki.p.rapidapi.com/exercises',
@@ -71,7 +71,7 @@ export default function Page() {
             const response = await axios.request(options);
             setResult(response.data);
         } catch (e) {
-            console.log(e);
+            // console.log(e);
             <Error />
         }
     
@@ -84,11 +84,11 @@ export default function Page() {
     // update current page data
     useEffect(() => {
         setCurrentData(result.slice(startIndex, endIndex));
-        console.log(currentData);
+        // console.log(currentData);
 
-        console.log(startIndex);
-        console.log(endIndex);
-        console.log(result.slice(startIndex, endIndex));
+        // console.log(startIndex);
+        // console.log(endIndex);
+        // console.log(result.slice(startIndex, endIndex));
     }, [startIndex, result]);
 
     const updateIndex = () => {
@@ -104,12 +104,12 @@ export default function Page() {
     
     const previousPage = () => {
         setCurrentPage(currentPage - 1);
-        console.log("PREVIOUS PAGE ACTIVATED")
+        // console.log("PREVIOUS PAGE ACTIVATED")
     }
     
     const nextPage = () => {
         setCurrentPage(currentPage + 1);
-        console.log("NEXT PAGE ACTIVATED")
+        // console.log("NEXT PAGE ACTIVATED")
     }
     
     useEffect(() => {
@@ -118,8 +118,8 @@ export default function Page() {
     
     const lastPage = (result.length === 0) ? currentPage : Math.ceil(result.length / itemsPerPage);
 
-    console.log(`last page: ${lastPage}`);
-    console.log(`Result length: ${result.length}`);
+    // console.log(`last page: ${lastPage}`);
+    // console.log(`Result length: ${result.length}`);
     return (
         
         <div className={styles.main}>
@@ -128,7 +128,7 @@ export default function Page() {
                     <Link href={'/'}>
                         <div className={styles.home_nav}>
                             <div className={styles.home_logo}>
-                                <Image src="/../favicon.ico" width={35} height={35} /> 
+                                <Image src="/favicon.ico" width={15} height={15} /> 
                             </div>
                             <h1>Workout Finder</h1>
                         </div>

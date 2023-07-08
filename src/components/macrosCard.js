@@ -78,7 +78,7 @@ export default function MacrosCard() {
         try {
             const response = await axios.request(options);
             setResult(response.data.data);
-            console.log(response.data.data);
+            // console.log(response.data.data);
         } catch (error) {
             console.log(error);
         }
@@ -162,7 +162,7 @@ export default function MacrosCard() {
                         <button className={styles.button} onClick={(e) => {
                             e.preventDefault();
                             handleSubmit();
-                            console.log(options);
+                            // console.log(options);
                             }} >Calculate</button>    
                     </form>
                 </div>

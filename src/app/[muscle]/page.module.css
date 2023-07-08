@@ -35,9 +35,9 @@
 
 .home_nav {
     background-color: #232320;
-    padding:  10px 20px;
+    padding:  5px 20px;
     border-radius: 12px;
-    margin: 10px 0;
+    margin: 5px 0;
 
     display: flex;
     flex-direction: row;
@@ -46,7 +46,8 @@
 }
 
 .home_nav h1 {
-    color: white
+    color: white;
+    font-size: 1rem;
 }
 
 .page_nav {
@@ -56,13 +57,13 @@
     justify-content: space-evenly;
     gap: 1em;
 
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .page_nav > button {
     background-color: transparent;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer
 }
@@ -95,11 +96,11 @@
 }
 
 .card_title > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .card_title > h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: lighter;
 }
 
@@ -112,7 +113,7 @@
 
 .card_muscle > h3 {
     text-transform: capitalize;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .card_muscle > .muscle_primary {
@@ -135,7 +136,7 @@
 }
 
 .card_videos > video {
-    width: 800px;
+    width: 675px;
     height: 425px;
     aspect-ratio: 16/9;
 
@@ -149,7 +150,7 @@
 .card_steps > ul > li {
     padding: 10px;
     margin: 1em;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: oblique;
 
     background: #FFF;
