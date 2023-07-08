@@ -1,0 +1,274 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3fr 2fr 0.2fr;
+  border: none;
+  gap: 0.4rem;
+  width: 100%;
+  height: 100%;
+}
+
+.workoutCard, .bmiCard, .macrosCard, .creditsCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #FFF973;
+  border-radius: 20px;
+  color: black;
+}
+
+.workoutCard {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.workoutCard h2 {
+  font-size: 3rem;
+}
+
+.workoutImages {
+  display: flex;
+
+  /* grid-template-columns: repeat(6, 1fr); */
+  align-items: center;
+  justify-content: space-evenly;
+  height: max-content;
+}
+
+.workoutImages a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.workoutImages a {
+  border-radius: 15px;
+  border: 3px solid black;
+  height: 325px;
+  width: 325px;
+  margin: 0;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.workoutImages h3 {
+  font-size: 2.5rem;
+}
+
+.workoutImages a:nth-of-type(1) {
+  background: url("../images/biceps.png");
+  background-size: cover;
+}
+
+.workoutImages a:nth-of-type(2) {
+  background: url("../images/triceps.png");
+  background-size: cover;
+}
+
+.workoutImages a:nth-of-type(3) {
+  background: url("../images/forearms.jpg");
+  background-size: cover;
+  
+}
+
+.workoutImages a:nth-of-type(4) {
+  background: url("../images/shoulders.png");
+  background-size: cover;
+}
+
+.workoutImages a:nth-of-type(5) {
+  background: url("../images/quads.png");
+  background-size: cover;
+}
+
+.workoutImages a:nth-of-type(6) {
+  background: url("../images/glutes.jpg");
+  background-size: cover;
+}
+
+.lineBreak {
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr;
+  text-align: center;
+  align-items: center;
+}
+
+.searchFilter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.searchFilter > .searchBar {
+    grid-column: 1 / 4;
+    background-color: white;
+    font-size: 1rem;
+    padding: 0 1rem;
+    color: black;
+}
+
+.bmiCard {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.bmiCard h3, .macrosCard h3 {
+  font-size: 1.8rem;
+}
+
+.bmiCard form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.5rem;
+}
+
+.bmiCard label:nth-of-type(1) {
+  padding-left: 20px;
+}
+
+.bmiCard input, .macros_input input {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.bmiCard button {
+  grid-column: 1 / -1;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  background-color: black;
+  color: #fbf241;
+}
+
+.button:hover {
+  background-color: #fbf241;
+  color: black;
+}
+
+.bmiCard > .result {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+}
+
+.bmiBar {
+  grid-row: 2 / 3;
+
+  margin-top: 45px;
+  margin-bottom: 20px;
+  height: 35px;
+  width: 75%;
+  border-radius: 20px;
+  border: 3px solid #000;
+  background: linear-gradient(90deg,  #F00 0%, #28E424 29.69%, #E4BA24 46.88%, #F16514 84.90%, #F00 95.31%);
+
+}
+
+.bmiBar > .bmiPointer {
+  box-sizing: border-box;
+  padding: 0;
+  width: 21px;
+  height: 25px;
+  flex-shrink: 0;
+  background: url("http://192.168.1.120:8080/my-app/src/styles/icons/bmiPointer.svg");
+  position: relative;
+  z-index: 2;
+  top: -26px;
+  transition: left 1s ease-in-out  ;
+}
+
+.macrosCard {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
+
+.macros_io {
+  min-height: 90%;
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 4fr;
+}
+
+.macros_io > .vertLine {
+  border: 2px solid black;
+  width: 1px;
+  height: 90%;
+  margin: auto auto;
+}
+
+.macros_input {
+  grid-column: 1 / 2;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+}
+
+.macros_input input {
+  background-color: white;
+  color: black;
+}
+
+.macros_input label:nth-of-type(4), .macros_input label:nth-of-type(5), 
+.macros_input label:nth-of-type(6) {
+  justify-self: end;
+}
+
+.macros_input > button {
+  grid-column: 1 / -1;
+}
+
+.macros_output {
+  display: grid; 
+  grid-template-rows: 1fr repeat(4, 2fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.creditsCard {
+  grid-column: 1 / 2;
+  grid-row: 3 / -1;
+
+  padding: 0;
+}
+
+.creditsCard ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: 0;
+  margin: 0;
+}
+
+.creditsCard a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: bold;
+
+  text-decoration: none;
+  color: inherit;
+
+
+}

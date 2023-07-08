@@ -1,0 +1,158 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+
+    margin: 0;
+    padding: 1em;
+    padding-top: 0;
+
+    background-color: #dbdbdb4c;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    width: 100vw;
+    background-color: #FFF973;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav > a {
+    text-decoration: none;
+}
+
+.home_nav {
+    background-color: #232320;
+    padding:  10px 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.home_nav h1 {
+    color: white
+}
+
+.page_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+
+    font-size: 1.4rem;
+}
+
+.page_nav > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.card {
+    
+    width: 80%;
+    min-height: max-content;
+
+    padding: 40px;
+
+    border-radius: 20px;
+    background-color: #fffafaa4;
+    box-shadow: 0px 21px 22px -2px rgba(0, 0, 0, 0.25);
+}
+
+.card_header {
+    margin: 0 17px;
+}
+
+.card_title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card_title > h3, .card_title > h2 {
+    width: max-content;
+}
+
+.card_title > h1 {
+    font-size: 2.5rem;
+}
+
+.card_title > h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.card_muscle {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px
+}
+
+.card_muscle > h3 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+.card_muscle > .muscle_primary {
+    font-weight: 600;
+}
+
+.card_muscle > .muscle_secondary {
+    font-weight: lighter;
+}
+
+.card_videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin: 30px auto;
+    padding: 0;
+}
+
+.card_videos > video {
+    width: 800px;
+    height: 425px;
+    aspect-ratio: 16/9;
+
+}
+
+.card_steps {
+    padding: 20px 50px;
+
+}
+
+.card_steps > ul > li {
+    padding: 10px;
+    margin: 1em;
+    font-size: 1.5rem;
+    font-style: oblique;
+
+    background: #FFF;
+    border-radius: 12px;
+    border: 1px solid black;
+}

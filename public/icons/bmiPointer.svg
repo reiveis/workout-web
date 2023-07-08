@@ -1,0 +1,22 @@
+<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="19" height="24" fill="#1E1E1E"/>
+<g id="Desktop - 1" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1024" transform="translate(-158 -845)" fill="#232320"/>
+<g id="bmi calc">
+<rect id="Rectangle 5" x="-141" y="-314" width="432" height="416" rx="20" fill="#FFF973"/>
+<rect id="Rectangle 7" x="-112.5" y="47.5" width="23" height="374" rx="11.5" transform="rotate(-90 -112.5 47.5)" fill="url(#paint0_linear_0_1)" stroke="black" stroke-width="3"/>
+<path id="Polygon 2" d="M9.5 24L0.406734 0L18.5933 0L9.5 24Z" fill="black"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="-101" y1="49" x2="-101" y2="426" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FD3F15"/>
+<stop offset="0.260417" stop-color="#28E424"/>
+<stop offset="0.546875" stop-color="#E4BA24"/>
+<stop offset="0.953125" stop-color="#FF0000"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1024" fill="white" transform="translate(-158 -845)"/>
+</clipPath>
+</defs>
+</svg>
