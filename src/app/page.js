@@ -27,8 +27,3 @@ export default function Home(props) {
     </main>
   )
 }
-
-export const getServerSideProps = async () => {
-  console.log("GET SERVER SIDE PROPS" )
-  return { props: { message: "Hello" } }
-}
