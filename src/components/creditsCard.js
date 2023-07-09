@@ -10,13 +10,13 @@ export default function CreditsCard({url}) {
         <div className={`${styles.creditsCard} ${styles.card}`}>
             <ul style={{height: "100%"}}>
                 <li>
-                    <a href="https://www.linkedin.com/in/nor-danish-imran-nor-hisham-5ab046204/" target='_blank'><Image src={"../icons/linkedin_.svg"} width={25} height={25} alt='linkedin' />LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/nor-danish-imran-nor-hisham-5ab046204/" target='_blank'><Image src={"../icons/linkedin_.svg"} width={25} height={25} alt='linkedin' /><span className={styles.logo_name}>LinkedIn</span></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/dan.imrn/" target='_blank'><Image src={`../icons/instagram_.svg`} width={25} height={25} alt='instagram' />Instagram</a>
+                    <a href="https://www.instagram.com/dan.imrn/" target='_blank'><Image src={`../icons/instagram_.svg`} width={25} height={25} alt='instagram' /><span className={styles.logo_name}>Instagram</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/virtualdann" target='_blank'><Image src={`../icons/github_.svg`} width={25} height={25} alt='github' />GitHub</a>
+                    <a href="https://github.com/virtualdann" target='_blank'><Image src={`../icons/github_.svg`} width={25} height={25} alt='github' /><span className={styles.logo_name}>GitHub</span></a>
                 </li>
             </ul>
 

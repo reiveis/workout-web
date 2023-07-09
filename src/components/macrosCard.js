@@ -125,12 +125,12 @@ export default function MacrosCard() {
         <div className={`${styles.macrosCard} ${styles.card}`}>
             <h3>Macros Calculator</h3>
             <div className={styles.macros_io}>
-                <div>
+                <div style={{width: "100%"}}>
                     <form  className={styles.macros_input}>
                         <label className={styles.select} style={{gridColumn: "1 / -1"}}>
                             Activity Level: 
                             <Select 
-                                className={drop.categories}
+                                className={drop.macros}
                                 defaultValue={activitylevel[0]}
                                 options={activitylevel}
                                 onChange={(e) => {handleInputChange('activitylevel', e.value)}}
@@ -139,7 +139,7 @@ export default function MacrosCard() {
                         <label style={{gridColumn: "1 / -1"}}>
                             Goals: 
                             <Select 
-                                className={drop.categories}
+                                className={drop.macros}
                                 defaultValue={goals[0]}
                                 options={goals}
                                 name='goal'
@@ -149,7 +149,7 @@ export default function MacrosCard() {
                         <label>
                             Gender: 
                             <Select 
-                                className={drop.categories}
+                                className={drop.macros}
                                 defaultValue={gender[0]}
                                 options={gender}
                                 onChange={(e) => handleInputChange('gender', e.value)}
@@ -169,12 +169,14 @@ export default function MacrosCard() {
                 <div className={styles.vertLine}></div>
                 <div className={styles.macros_output}>
                     <h2>Your daily intake is {Math.round(result.calorie)} calorie</h2>
+                    <div className={styles.diet_list}>
+
                     {    diets.map((diet) => {
                         return (
                             
                             <div key={diet}>
                                     <h4 style={{textAlign: "center"}}>{ (diet == 'balanced') ? "Balanced" : (diet == 'highprotein') ? "High Protein" :(diet == 'lowcarbs') ? "Low Carbs" : "Low Fat" }</h4>
-                                    <ul style={{listStyle: "none", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
+                                    <ul className={styles.macros_ul}>
                                         <li>Protein: {Math.round(result[diet].protein)}g</li>
                                         <li>Carbs: {Math.round(result[diet].carbs)}g</li>
                                     <li>Fat: {Math.round(result[diet].fat)}g</li>
@@ -183,6 +185,7 @@ export default function MacrosCard() {
                             )
                         })
                     }
+                    </div>
                 </div>
 
             </div>
