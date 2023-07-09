@@ -1,7 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: max-content 2fr 0.2fr;
+  grid-template-rows: max-content 1.5fr 0.2fr;
   border: none;
   gap: 0.4rem;
   width: 100%;
