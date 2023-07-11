@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
         href="/icon?<generated>"
         type="image/<generated>"
         sizes="<generated>" />
+      <meta name="google-site-verification" content="FZJWfecvqIZJjH2yNfmFl__wv4SGL3kavRUcVYCNYGg" />
       </head>
       <body className={roboto.className}>{children}</body>
     </html>
