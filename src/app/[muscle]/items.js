@@ -20,7 +20,7 @@ function Item(item) {
                 </div>
                 <div className={styles.card_videos}>
                     { item.item.videoURL.map((video) => (
-                        <video autoPlay controls loop muted key={video}>
+                        <video playsInline controls loop muted preload='metadata' key={video}>
                             <source src={video} type="video/mp4"/>
                         </video>
                         )) 
