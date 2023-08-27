@@ -38,7 +38,6 @@ function Page() {
     const [key, page] = keyValuePairs.pop().split('='); 
     console.log(page)
 
-    // console.log(router)
     return (
     <div style={{display: "flex", flexDirection: "column", width: "max-content", gap: "2em", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
         {/* <button onClick={pushCounter}>PUSH COUNTER</button>
